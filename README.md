@@ -6,7 +6,7 @@
 它的上/下课铃是相同的。为了提神，铃声可能比较特殊，**建议佩戴耳机或调小音量**。
 
 ## 在线预览
-点击[此处](https://github.com/yaoying2012/classy-timer)预览，在中国大陆访问可能加载较慢。
+点击[此处](https://yaoying2012.github.io/classy-timer/timer.html)预览，在中国大陆访问可能加载较慢。
 
 ## 使用方法
 下载压缩包，解压，用浏览器打开timer.html。
