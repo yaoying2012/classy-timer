@@ -34,3 +34,16 @@ function updateTimer() {
         isWorking = !isWorking;
     }
 }
+
+
+function toggleFullScreen() {
+    if (!document.fullscreenElement) {
+        // 标准浏览器
+        document.documentElement.requestFullscreen();
+        // Webkit 浏览器
+    } else if (document.webkitFullscreenElement) {
+        document.webkitExitFullscreen();
+    } else if (document.mozFullScreenElement) {
+        document.mozCancelFullScreen();
+    }
+}
