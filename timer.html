@@ -9,11 +9,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
+    <div id="dark-overlay"></div>
+    <div id="alarm-container">
+        <div id="alarm-content">
+            <div class="alarm-close" onclick="toggleAlarm(); pauseAudio();">X</div>
+            <div id="alarm-title">选择铃声</div>
+            <div id="alarm-list">
+                <button onclick="choiceAlarm(1)">防空警报</button>
+                <button onclick="choiceAlarm(2)">全面核打击警报（长）</button>
+                <button onclick="choiceAlarm(3)">全面核打击警报（短）</button>
+            </div>
+        </div>
+    </div>
     <div id="time-left">45:00</div>
     <button onclick="toggleTheme()">切换黑暗/光明模式</button>
     <button onclick="startTimer()">开始计时</button>
     <button onclick="toggleFullScreen()">进入/退出全屏</button>
-    <audio id="alarmSound" src="alarm.mp3" preload="auto"></audio>
+    <button onclick="toggleAlarm()">选择铃声</button>
+    <audio id="alarmSound" preload="auto"></audio>
     <script src="script.js"></script>
+    <script src="alarm.js"></script>
 </body>
 </html>

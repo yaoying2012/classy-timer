@@ -3,6 +3,9 @@ let timeLeft = 45 * 60; // 45分钟转为秒
 let isDarkMode = true;
 let timerInterval;
 
+let alarmSound = document.getElementById('alarmSound')
+alarmSound.src = alarmDict[1];
+
 function toggleTheme() {
     if (isDarkMode) {
         $('body').addClass('dark-theme');
